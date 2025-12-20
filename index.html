@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ce site rassemble tous les sites que Nathan utilise." />
+  <meta name="author" content="Nathan The Coder" />
+  <meta name="robots" content="index, follow" />
+  <meta name="language" content="fr" />
+  <meta property="og:type" content="website" />
+  <title>Sites du Nathan</title>
+  <link rel="icon" href="index/flavicon/favicon.ico" type="image/x-icon" />
+  <link rel="icon" type="image/png" sizes="32x32" href="index/flavicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="index/flavicon/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="index/flavicon/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&family=Yanone+Kaffeesatz:wght@400;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index/css/styles.css" />
+</head>
+<body>
+
+<header>
+  <div class="logo">🌐 Hub Sites du Nathan</div>
+
+  <div class="menu-icons">
+    <div class="icon-box">
+      <span>📚</span>
+      <div class="dropdown">
+        <a href="https://nathan-the-coder.netlify.app" target="_blank" rel="noopener"><img src="index/img/nathan-the-coder.jpg" alt="Nathan's WebSite">Nathan's WebSite</a>
+        <a href="https://criqui-oisis.netlify.app" target="_blank" rel="noopener"><img src="index/img/criqui-oisis.png" alt="Criqui-Oisis">Criqui-Oisis</a>
+        <a href="https://athena-louis-hayet.netlify.app" target="_blank" rel="noopener"><img src="index/img/myhub.ico" alt="Hub Collège">Mon Hub Collège</a>
+        <a href="https://athena.moncollege-valdoise.fr" target="_blank" rel="noopener"><img src="index/img/hub.ico" alt="Hub Officiel Collège">Hub Officiel Collège</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <main>
+    <h1>Bienvenue !</h1>
+
+    <div class="shortcuts-animated">
+      <div class="shortcut"><span>D</span> Discord</div>
+      <div class="shortcut"><span>M</span> Mail</div>
+      <div class="shortcut"><span>V</span> Dev</div>
+      <div class="shortcut"><span>E</span> Divertissement</div>
+      <div class="shortcut"><span>ESC</span> Fermer</div>
+    </div>
+
+    <div class="services">
+      <a class="card" href="https://mega.nz/fm" target="_blank" rel="noopener">
+        <img src="index/img/mega.png" alt="Mega">
+        <p>Mega</p>
+      </a>
+
+      <a class="card" href="https://web.whatsapp.com" target="_blank" rel="noopener">
+        <img src="index/img/whatsapp.png" alt="WhatsApp Web">
+        <p>WhatsApp Web</p>
+      </a>
+
+      <div class="card" onclick="openDiscordModal()">
+        <img src="index/img/discord.png" alt="Discord">
+        <p>Discord</p>
+      </div>
+
+      <div class="card" onclick="openFunModal()">
+        <img src="index/img/fun.png" alt="Divertissement">
+        <p>Divertissement</p>
+      </div>
+
+      <div class="card" onclick="openMailModal()">
+        <img src="index/img/mail.png" alt="Mail">
+        <p>Mail</p>
+      </div>
+
+      <div class="card" onclick="openDevModal()">
+        <img src="index/img/dev.png" alt="Dev">
+        <p>Dev</p>
+      </div>
+
+      <a class="card" href="https://chatgpt.com" target="_blank" rel="noopener">
+        <img src="index/img/chatgpt.png" alt="ChatGPT">
+        <p>ChatGPT</p>
+      </a>
+
+      <a class="card" href="https://canva.com" target="_blank" rel="noopener">
+        <img src="index/img/canva.png" alt="Canva">
+        <p>Canva</p>
+      </a>
+    </div>
+  </main>
+
+<div class="modal-overlay" id="discordModal">
+  <div class="modal glass-card">
+    <button class="modal-close" onclick="closeDiscordModal()">✕</button>
+
+    <h2>Discord Hub</h2>
+    <p>Choisis ce que tu veux ouvrir</p>
+
+    <div class="modal-grid">
+      <a href="https://discord.com/app" target="_blank" class="modal-card">
+        <img src="index/img/discord.png" alt="Discord">
+        <span>Discord</span>
+      </a>
+
+      <a href="https://www.draftbot.fr/dashboard/user" target="_blank" class="modal-card">
+        <img src="index/img/draftbot.png" alt="DraftBot">
+        <span>DraftBot</span>
+      </a>
+
+      <a href="https://flavibot.xyz/fr" target="_blank" class="modal-card">
+        <img src="index/img/flavibot.png" alt="DraftBot">
+        <span>FlaviBot</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="devModal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeAllModals()">✕</button>
+
+    <h2>Dev Tools</h2>
+    <p>Outils de développement</p>
+
+    <div class="modal-grid">
+      <a href="https://github.com/login" target="_blank" class="modal-card">
+        <img src="index/img/github.png" alt="GitHub">
+        <span>GitHub</span>
+      </a>
+
+      <a href="https://app.netlify.com" target="_blank" class="modal-card">
+        <img src="index/img/netlify.png" alt="Netlify">
+        <span>Netlify</span>
+      </a>
+
+      <a href="https://supabase.com/dashboard" target="_blank" class="modal-card">
+        <img src="index/img/supabase.png" alt="Supabase">
+        <span>Supabase</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="mailModal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeAllModals()">✕</button>
+
+    <h2>Mails</h2>
+    <p>Choisis ton service mail</p>
+
+    <div class="modal-grid">
+      <a href="https://gmail.com" target="_blank" class="modal-card">
+        <img src="index/img/gmail.png" alt="Gmail">
+        <span>Gmail</span>
+      </a>
+
+      <a href="https://outlook.live.com/mail/0/" target="_blank" class="modal-card">
+        <img src="index/img/outlook.png" alt="Outlook">
+        <span>Outlook</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="funModal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeAllModals()">✕</button>
+
+    <h2>Divertissement</h2>
+    <p>Musique & vidéos</p>
+
+    <div class="modal-grid">
+      <a href="https://youtube.com" target="_blank" class="modal-card">
+        <img src="index/img/youtube.png" alt="YouTube">
+        <span>YouTube</span>
+      </a>
+
+      <a href="https://open.spotify.com" target="_blank" class="modal-card">
+        <img src="index/img/spotify.png" alt="Spotify">
+        <span>Spotify</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+  <footer>
+    <strong>© 2025 - Nathan The Coder</strong> <br>
+    Made with 🕑 and 💖 by Nathan J.
+  </footer>
+
+    <script src="index/js/script.js" defer></script>
+
+</body>
+</html>
